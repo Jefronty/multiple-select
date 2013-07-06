@@ -39,7 +39,7 @@
 			if ($(e.target)[0] === that.$choice[0] || $(e.target).parents('.ms-choice')[0] === that.$choice[0]) {
 				return;
 			}
-			if (($(e.target)[0] !== that.$drop[0] && $(e.target)[0].name !== 'selectItem' && e.target.tagName !== 'LABEL') && $('.ms-drop').css('display')=='block'){
+			if (($(e.target)[0] !== that.$drop[0] && $(e.target)[0].name !== 'selectItem' && e.target.tagName !== 'LABEL' && e.target.tagName !== 'LI') && $('.ms-drop').css('display')=='block'){
 				that.close();
 			}
 		});
